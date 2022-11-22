@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+
+:root {
+    --main: rgb(0, 65, 194);
+    --blue: rgb(7, 7, 163);
+    --glass: rgba(0, 65, 194, 0.587);
+    --text: rgba(255, 255, 255, 0.919);
+    --color: rgb(255, 187, 128);
+    --bluee: rgba(198, 236, 254, 0.75);
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(.43, 1.1, .62, 1.08);
+    outline: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+*>img {
+    user-select: none;
+    pointer-events: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* scroll-padding-top: 6rem; */
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--text);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--bord);
+    border-radius: 30px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(195, 120, 62);
+}
+
+section {
+    padding: 5rem 10%;
+}
+
+.find_company {
+    margin: 0 0 5rem 0;
+}
+.find_company form label{
+    display:block;
+    font-size: 15px;
+    padding-bottom:3px;
+}
+
+.find_company form input {
+    max-width: 75rem;
+    width: 100%;
+    height: 4.5rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.find_company form button {
+    width: 30rem;
+    height: 4rem;
+    margin-left: 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--blue);
+    color:var(--text);
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.find_company form button:hover{
+    background-color: var(--glass);
+    color:black;
+}
+
+.section_title h1 {
+    font-size: 2rem;
+}
+
+.cards {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.class-single {
+    justify-content: space-between;
+    background: var(--blue);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.class-single div:last-child span {
+    color: var(--text);
+    font-size: 2rem;
+}
+
+.class-single div:first-child span {
+    font-size: 5rem;
+    color: var(--text);
+    padding-bottom: 1rem;
+}
